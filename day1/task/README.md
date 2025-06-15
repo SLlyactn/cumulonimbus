@@ -1,3 +1,16 @@
+# Python与Git基础课程
+今天学习了python的基础:  
+1.变量、变量类型、作用域   
+2.运算符及表达式  
+3.语句：条件、循环、异常  
+4.函数：定义、参数、匿名函数、高阶函数  
+5.包和模块：定义模块、导入模块、使用模块、第三方模块  
+6.类和对象  
+7.装饰器  
+8.文件操作  
+
+## 学习内容1代码
+```python
 # 变量类型
 name = "Alice"  # str
 age = 20        # int
@@ -18,7 +31,10 @@ def my_function():
 
 my_function()
 print(f"Outside function: x={x}")
+```
 
+## 学习内容2代码
+```python
 # 算术运算
 a = 10
 b = 3
@@ -34,7 +50,10 @@ print(x or y)   # True
 
 # 比较运算
 print(a > b)  # True
-   
+```
+
+## 学习内容3代码
+```python
 # 条件语句
 score = 85
 if score >= 90:
@@ -60,7 +79,10 @@ except ValueError:
     print("Invalid input!")
 finally:
     print("Execution completed.")
+```
 
+## 学习内容4代码
+```python
 # 函数定义
 def greet(name, greeting="Hello"):
     return f"{greeting}, {name}!"
@@ -81,7 +103,10 @@ print(double(5))  # 10
 def apply_func(func, value):
     return func(value)
 print(apply_func(lambda x: x ** 2, 4))  # 16
+```
 
+## 学习内容5代码
+```python
 # 创建模块 mymodule.py
 # mymodule.py
 def say_hello():
@@ -98,7 +123,10 @@ print(response.status_code)  # 200
 
 # 包使用示例
 from mypackage import mymodule
+```
 
+## 学习内容6代码
+```python
 # 定义类
 class Student:
     def __init__(self, name, age):
@@ -122,7 +150,10 @@ student = Student("Alice", 20)
 grad = GradStudent("Bob", 22, "CS")
 print(student.introduce())  # I am Alice, 20 years old.
 print(grad.introduce())     # I am Bob, a CS student.
+```
 
+## 学习内容7代码
+```python
 # 简单装饰器
 def my_decorator(func):
     def wrapper():
@@ -151,7 +182,10 @@ def greet(name):
     print(f"Hi, {name}!")
 
 greet("Alice")
+```
 
+## 学习内容8代码
+```python
 # 写文件
 with open("example.txt", "w") as f:
     f.write("Hello, Python!\n")
@@ -167,3 +201,4 @@ with open("data.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["Name", "Age"])
     writer.writerow(["Alice", 20])
+```
